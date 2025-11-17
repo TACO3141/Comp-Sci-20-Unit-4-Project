@@ -14,7 +14,7 @@ class U4Project
     catch(InterruptedException e)
       {
       }
-    System.out.println("Override Successful. Welcome, administrator. Data corrupted. Enter new password:")
+    System.out.println("Override Successful. Welcome, administrator. Data corrupted. Enter new password:");
     String password = scan.nextLine();
     System.out.println("Password contains " +  password.length() + " characters.");
     System.out.println("Scramble initiated.");
