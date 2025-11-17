@@ -16,7 +16,24 @@ class U4Project
       }
     System.out.println("Override Successful. Welcome, administrator. Data corrupted. Enter new password:");
     String password = scan.nextLine();
-    System.out.println("Password contains " +  password.length() + " characters.");
-    System.out.println("Scramble initiated.");
+    System.out.println("\nPassword contains " +  password.length() + " characters.\n");
+    String backwardsPassword = "";
+    char[] arr = password.toCharArray();
+    int highIndex = arr.length - 1;
+    int lowIndex = 0;
+    char temporary = 'a';
+    while (lowIndex < highIndex)
+    {
+      temporary = arr[highIndex];
+      arr[highIndex] = arr[lowIndex];
+      arr[lowIndex] = temporary;
+      highIndex --;
+      lowIndex ++;
+    }
+    for (int i = 0; i < arr.length - 1; i ++)
+    {
+      backwardsPassword = backwardsPassword + arr[i];
+    }
+    System.out.println("Backwards password:\n" + backwardsPassword);
   }
 }
