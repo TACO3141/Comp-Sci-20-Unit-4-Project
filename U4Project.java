@@ -5,6 +5,7 @@ class U4Project
 {
   public static void main(String[] args)
   {
+    String scramble = "";
     Scanner scan = new Scanner(System.in);
     System.out.println("Exception Caught: Matrix.Backend.Main.UserNotRecognizedException: Biometric failure. Manual Override Intiated.\n...");
     try
@@ -36,6 +37,10 @@ class U4Project
     }
     System.out.println("Backwards password:\n" + backwardsPassword + "\n");
     System.out.println("Enter method:\n{S} - Scramble\n{X} - Sort");
-    //Implement a sorting system!!!!!!! 😛
+    String choice = scan.nextLine();
+    if (choice.toLowerCase() == "s")
+    {
+      
+    }
   }
 }
