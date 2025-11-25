@@ -5,6 +5,8 @@ class U4Project
 {
   public static void main(String[] args)
   {
+    boolean sorted = false;
+    String toPrint = "";
     int temp = 0;
     String scramble = "";
     Scanner scan = new Scanner(System.in);
@@ -164,9 +166,9 @@ class U4Project
         }
       }
 
-      while (numSwaps != 0)
+      while (sorted = false)
       {
-        numSwaps = 0;
+        sorted = true;
         for (sortIndex == 0; sortIndex < unsortedInts.length + 1; sortIndex++)
         {
           if (unsortedInts[sortIndex] > unsortedInts[sortIndex + 1])
@@ -174,10 +176,16 @@ class U4Project
             temp = unsortedInts[sortIndex];
             unsortedInts[sortIndex] = unsortedInts[sortIndex + 1];
             unsortedInts[sortIndex + 1] = temp;
-            numSwaps += 1;
+            sorted = false;
           }
         }
       }
+      for (printVar = 0; printVar < unsortedInts; printVar++)
+      {
+        toPrint = toPrint + unsortedInts[printVar];
+      }
+      System.out.println("Sorted password: " + toPrint);
+      
     }
   }
 }
