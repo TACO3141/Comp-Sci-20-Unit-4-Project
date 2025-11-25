@@ -57,110 +57,110 @@ class U4Project
     {
       System.out.println("Numberizing password... any symbols or non-letters will be left out.");
       char[] sortArr = password.toLowerCase().toCharArray();
-      int[] unsortedInts = new int[password.length];
-      for (numberize = 0; numberize < sortArr.length; numberize++)
+      int[] unsortedInts = new int[sortArr.length];
+      for (int numberize = 0; numberize < sortArr.length; numberize++)
       {
-        if (sortArr[numberize] == a)
+        if (sortArr[numberize] == 'a')
         {
           unsortedInts[numberize] = 1;
         }
-        else if (sortArr[numberize] == b)
+        else if (sortArr[numberize] == 'b')
         {
           unsortedInts[numberize] = 2;
         }
-        else if (sortArr[numberize] == c)
+        else if (sortArr[numberize] == 'c')
         {
           unsortedInts[numberize] = 3;
         }
-        else if (sortArr[numberize] == d)
+        else if (sortArr[numberize] == 'd')
         {
           unsortedInts[numberize] = 4;
         }
-        else if (sortArr[numberize] == e)
+        else if (sortArr[numberize] == 'e')
         {
           unsortedInts[numberize] = 5;
         }
-        else if (sortArr[numberize] == f)
+        else if (sortArr[numberize] == 'f')
         {
           unsortedInts[numberize] = 6;
         }
-        else if (sortArr[numberize] == g)
+        else if (sortArr[numberize] == 'g')
         {
           unsortedInts[numberize] = 7;
         }
-        else if (sortArr[numberize] == h)
+        else if (sortArr[numberize] == 'h')
         {
           unsortedInts[numberize] = 8;
         }
-        else if (sortArr[numberize] == i)
+        else if (sortArr[numberize] == 'i')
         {
           unsortedInts[numberize] = 9;
         }
-        else if (sortArr[numberize] == j)
+        else if (sortArr[numberize] == 'j')
         {
           unsortedInts[numberize] = 10;
         }
-        else if (sortArr[numberize] == k)
+        else if (sortArr[numberize] == 'k')
         {
           unsortedInts[numberize] = 11;
         }
-        else if (sortArr[numberize] == l)
+        else if (sortArr[numberize] == 'l')
         {
           unsortedInts[numberize] = 12;
         }
-        else if (sortArr[numberize] == m)
+        else if (sortArr[numberize] == 'm')
         {
           unsortedInts[numberize] = 13;
         }
-        else if (sortArr[numberize] == n)
+        else if (sortArr[numberize] == 'n')
         {
           unsortedInts[numberize] = 14;
         }
-        else if (sortArr[numberize] == o)
+        else if (sortArr[numberize] == 'o')
         {
           unsortedInts[numberize] = 15;
         }
-        else if (sortArr[numberize] == p)
+        else if (sortArr[numberize] == 'p')
         {
           unsortedInts[numberize] = 16;
         }
-        else if (sortArr[numberize] == q)
+        else if (sortArr[numberize] == 'q')
         {
           unsortedInts[numberize] = 17;
         }
-        else if (sortArr[numberize] == r)
+        else if (sortArr[numberize] == 'r')
         {
           unsortedInts[numberize] = 18;
         }
-        else if (sortArr[numberize] == s)
+        else if (sortArr[numberize] == 's')
         {
           unsortedInts[numberize] = 19;
         }
-        else if (sortArr[numberize] == t)
+        else if (sortArr[numberize] == 't')
         {
           unsortedInts[numberize] = 20;
         }
-        else if (sortArr[numberize] == u)
+        else if (sortArr[numberize] == 'u')
         {
           unsortedInts[numberize] = 21;
         }
-        else if (sortArr[numberize] == v)
+        else if (sortArr[numberize] == 'v')
         {
           unsortedInts[numberize] = 22;
         }
-        else if (sortArr[numberize] == w)
+        else if (sortArr[numberize] == 'w')
         {
           unsortedInts[numberize] = 23;
         }
-        else if (sortArr[numberize] == x)
+        else if (sortArr[numberize] == 'x')
         {
           unsortedInts[numberize] = 24;
         }
-        else if (sortArr[numberize] == y)
+        else if (sortArr[numberize] == 'y')
         {
           unsortedInts[numberize] = 25;
         }
-        else if (sortArr[numberize] == z)
+        else if (sortArr[numberize] == 'z')
         {
           unsortedInts[numberize] = 26;
         }
@@ -169,7 +169,7 @@ class U4Project
       while (sorted = false)
       {
         sorted = true;
-        for (sortIndex == 0; sortIndex < unsortedInts.length + 1; sortIndex++)
+        for (int sortIndex = 0; sortIndex < unsortedInts.length + 1; sortIndex++)
         {
           if (unsortedInts[sortIndex] > unsortedInts[sortIndex + 1])
           {
@@ -180,7 +180,7 @@ class U4Project
           }
         }
       }
-      for (printVar = 0; printVar < unsortedInts; printVar++)
+      for (int printVar = 0; printVar < unsortedInts.length; printVar++)
       {
         toPrint = toPrint + unsortedInts[printVar];
       }
