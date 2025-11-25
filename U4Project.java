@@ -5,7 +5,7 @@ class U4Project
 {
   public static void main(String[] args)
   {
-    boolean sorted = false;
+    int temp = 0;
     String scramble = "";
     Scanner scan = new Scanner(System.in);
     System.out.println("Exception Caught: Matrix.Admin.Main.UserNotRecognizedException: Biometric failure. Manual Override Intiated.\n...");
@@ -53,10 +53,130 @@ class U4Project
     }
     else if (choice.toLowerCase() == "b")
     {
-      char sortArr = password.toCharArray();
-      while (sorted = false)
+      System.out.println("Numberizing password... any symbols or non-letters will be left out.");
+      char[] sortArr = password.toLowerCase().toCharArray();
+      int[] unsortedInts = new int[password.length];
+      for (numberize = 0; numberize < sortArr.length; numberize++)
       {
-        //Do it bruh 👅
+        if (sortArr[numberize] == a)
+        {
+          unsortedInts[numberize] = 1;
+        }
+        else if (sortArr[numberize] == b)
+        {
+          unsortedInts[numberize] = 2;
+        }
+        else if (sortArr[numberize] == c)
+        {
+          unsortedInts[numberize] = 3;
+        }
+        else if (sortArr[numberize] == d)
+        {
+          unsortedInts[numberize] = 4;
+        }
+        else if (sortArr[numberize] == e)
+        {
+          unsortedInts[numberize] = 5;
+        }
+        else if (sortArr[numberize] == f)
+        {
+          unsortedInts[numberize] = 6;
+        }
+        else if (sortArr[numberize] == g)
+        {
+          unsortedInts[numberize] = 7;
+        }
+        else if (sortArr[numberize] == h)
+        {
+          unsortedInts[numberize] = 8;
+        }
+        else if (sortArr[numberize] == i)
+        {
+          unsortedInts[numberize] = 9;
+        }
+        else if (sortArr[numberize] == j)
+        {
+          unsortedInts[numberize] = 10;
+        }
+        else if (sortArr[numberize] == k)
+        {
+          unsortedInts[numberize] = 11;
+        }
+        else if (sortArr[numberize] == l)
+        {
+          unsortedInts[numberize] = 12;
+        }
+        else if (sortArr[numberize] == m)
+        {
+          unsortedInts[numberize] = 13;
+        }
+        else if (sortArr[numberize] == n)
+        {
+          unsortedInts[numberize] = 14;
+        }
+        else if (sortArr[numberize] == o)
+        {
+          unsortedInts[numberize] = 15;
+        }
+        else if (sortArr[numberize] == p)
+        {
+          unsortedInts[numberize] = 16;
+        }
+        else if (sortArr[numberize] == q)
+        {
+          unsortedInts[numberize] = 17;
+        }
+        else if (sortArr[numberize] == r)
+        {
+          unsortedInts[numberize] = 18;
+        }
+        else if (sortArr[numberize] == s)
+        {
+          unsortedInts[numberize] = 19;
+        }
+        else if (sortArr[numberize] == t)
+        {
+          unsortedInts[numberize] = 20;
+        }
+        else if (sortArr[numberize] == u)
+        {
+          unsortedInts[numberize] = 21;
+        }
+        else if (sortArr[numberize] == v)
+        {
+          unsortedInts[numberize] = 22;
+        }
+        else if (sortArr[numberize] == w)
+        {
+          unsortedInts[numberize] = 23;
+        }
+        else if (sortArr[numberize] == x)
+        {
+          unsortedInts[numberize] = 24;
+        }
+        else if (sortArr[numberize] == y)
+        {
+          unsortedInts[numberize] = 25;
+        }
+        else if (sortArr[numberize] == z)
+        {
+          unsortedInts[numberize] = 26;
+        }
+      }
+
+      while (numSwaps != 0)
+      {
+        numSwaps = 0;
+        for (sortIndex == 0; sortIndex < unsortedInts.length + 1; sortIndex++)
+        {
+          if (unsortedInts[sortIndex] > unsortedInts[sortIndex + 1])
+          {
+            temp = unsortedInts[sortIndex];
+            unsortedInts[sortIndex] = unsortedInts[sortIndex + 1];
+            unsortedInts[sortIndex + 1] = temp;
+            numSwaps += 1;
+          }
+        }
       }
     }
   }
